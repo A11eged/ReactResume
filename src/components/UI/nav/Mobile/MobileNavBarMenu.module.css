@@ -1,0 +1,15 @@
+.NavBarMenuContainer {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+.NavBarMenu {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}

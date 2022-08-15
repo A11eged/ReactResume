@@ -1,0 +1,10 @@
+.HeroHeading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.Heading {
+  font-size: 3rem;
+  color: var(--white);
+}

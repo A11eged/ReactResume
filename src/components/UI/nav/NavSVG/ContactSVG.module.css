@@ -1,0 +1,10 @@
+.ContactSVG {
+  fill: var(--white);
+  height: 1.25rem;
+  width: 1.25rem;
+  transition: 0.25s ease;
+}
+
+.ContactSVG:hover {
+  fill: var(--cyan);
+}

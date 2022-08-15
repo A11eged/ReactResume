@@ -1,0 +1,10 @@
+.svg {
+  fill: black;
+}
+
+.svg:hover {
+  cursor: pointer;
+}
+.background {
+  fill: black;
+}

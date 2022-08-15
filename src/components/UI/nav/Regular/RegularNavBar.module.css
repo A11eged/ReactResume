@@ -1,0 +1,19 @@
+.RegularNavBar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.RegularNavBarContainer {
+  display: flex;
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  position: fixed;
+  margin: 0 auto;
+  left: 0rem;
+  width: 9%;
+  height: 100%;
+}

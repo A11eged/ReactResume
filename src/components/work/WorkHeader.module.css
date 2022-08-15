@@ -1,0 +1,6 @@
+.WorkHeaderTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--cyan);
+  z-index: 2;
+}

@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Breakpoint, setDefaultBreakpoints } from 'react-socks';
 import './App.css';
+import MobileNavBar from './components/UI/nav/Mobile/MobileNavBar';
+import Hero from './components/hero/Hero';
+// import RegularNavBar from './components/UI/nav/Regular/RegularNavBar';
+import Work from './components/work/Work';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 function App() {
+  setDefaultBreakpoints([
+    { xs: 0 },
+    { s: 376 },
+    { m: 768 },
+    { l: 992 },
+    { x: 1200 },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="hero-container">
+      <Breakpoint m down>
+        <MobileNavBar></MobileNavBar>
+      </Breakpoint>
+      <Breakpoint m up>
+        {/* <RegularNavBar></RegularNavBar> */}
+      </Breakpoint>
+      <Hero></Hero>
+      <Work></Work>
+      <About></About>
+      <Contact></Contact>
     </div>
   );
 }

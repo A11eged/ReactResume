@@ -23,9 +23,9 @@ p {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.45rem;
 }
-svg {
+/* svg {
   display: block;
-}
+} */
 *,
 *::before,
 *::after {

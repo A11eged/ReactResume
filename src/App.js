@@ -7,6 +7,7 @@ import Hero from './components/hero/Hero';
 import Work from './components/work/Work';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import UpArrow from './components/UX/UpArrow';
 
 function App() {
   setDefaultBreakpoints([
@@ -28,6 +29,7 @@ function App() {
       <Work></Work>
       <About></About>
       <Contact></Contact>
+      <UpArrow fill={'#fff'} />
     </div>
   );
 }

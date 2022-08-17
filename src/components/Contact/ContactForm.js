@@ -8,6 +8,12 @@ const ContactForm = (props) => {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPhone, setEnteredPhone] = useState('');
   const [enteredMessage, setEnteredMessage] = useState('');
+  // Using State to check if valid
+  const [nameValid, setNameValid] = useState(true);
+  const [subjectValid, setSubjectValid] = useState(true);
+  const [emailValid, setEmailValid] = useState(true);
+  const [phoneValid, setPhoneValid] = useState(true);
+  const [messageValid, setMessageValid] = useState(true);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -18,56 +24,99 @@ const ContactForm = (props) => {
       phone: enteredPhone,
       message: enteredMessage,
     };
-
-    props.onSaveForm(formContent);
-    setEnteredName('');
-    setEnteredSubject('');
-    setEnteredEmail('');
-    setEnteredPhone('');
-    setEnteredMessage('');
+    if (
+      enteredName.trim().length === 0 &&
+      enteredSubject.trim().length === 0 &&
+      enteredEmail.trim().length === 0 &&
+      enteredPhone.trim().length === 0 &&
+      enteredMessage.trim().length === 0
+    ) {
+      setNameValid(false);
+      setSubjectValid(false);
+      setEmailValid(false);
+      setPhoneValid(false);
+      setMessageValid(false);
+    } else {
+      props.onSaveForm(formContent);
+      setEnteredName('');
+      setEnteredSubject('');
+      setEnteredEmail('');
+      setEnteredPhone('');
+      setEnteredMessage('');
+    }
   };
 
   const nameChangeHandler = (event) => {
+    // event.target.styles.display = 'none';
+    if (event.target.value.trim().length === 0) {
+      setNameValid(false);
+    } else {
+      setNameValid(true);
+    }
     setEnteredName(event.target.value);
   };
 
   const subjectChangeHandler = (event) => {
+    if (event.target.value.trim().length === 0) {
+      setSubjectValid(false);
+    } else {
+      setSubjectValid(true);
+    }
     setEnteredSubject(event.target.value);
   };
 
   const emailChangeHandler = (event) => {
+    if (
+      event.target.value.trim().length === 0 ||
+      !event.target.value.includes('@', '.')
+    ) {
+      setEmailValid(false);
+    } else {
+      setEmailValid(true);
+    }
     setEnteredEmail(event.target.value);
   };
 
   const phoneChangeHandler = (event) => {
+    // if (event.target.value.trim().length < 10) {
+    //   setPhoneValid(false);
+    // } else {
+    //   setPhoneValid(true);
+    // }
     setEnteredPhone(event.target.value);
   };
 
   const messageChangeHandler = (event) => {
+    if (event.target.value.trim().length === 0) {
+      setMessageValid(false);
+    } else {
+      setMessageValid(true);
+    }
     setEnteredMessage(event.target.value);
   };
 
-  let hasContent = <p>Missing Text</p>;
   return (
     <form
       onSubmit={submitHandler}
       className={styles.contactForm}
       autoComplete="off"
     >
-      <ul className={styles.formControls}>
-        <li className={styles.formName}>
+      <ul className={`${styles.formControls}`}>
+        <li
+          className={`${styles.formName} ${
+            !nameValid ? styles.invalid : styles.valid
+          }`}
+        >
           <input
             className={styles.input}
             type="text"
             placeholder="Name"
             onChange={nameChangeHandler}
             value={enteredName}
-            required
           />
-          {enteredName.length > 0 && hasContent}
           <label className={styles.label}></label>
         </li>
-        <li className={styles.formPhone}>
+        <li className={`${styles.formPhone} ${!phoneValid && styles.invalid}`}>
           <input
             className={styles.input}
             type="phone"
@@ -77,35 +126,45 @@ const ContactForm = (props) => {
           />
           <label className={styles.label}></label>
         </li>
-        <li className={styles.formEmail}>
+        <li
+          className={`${styles.formEmail} ${
+            !emailValid ? styles.invalid : styles.valid
+          }`}
+        >
           <input
             className={styles.input}
             type="email"
             placeholder="Email"
-            required
             value={enteredEmail}
             onChange={emailChangeHandler}
           />
           <label className={styles.label}></label>
         </li>
-        <li className={styles.subject}>
+        <li
+          // className={`${styles['form-control']} ${!isValid && styles.invalid}`}
+          className={`${styles.subject} ${
+            !subjectValid ? styles.invalid : styles.valid
+          }`}
+        >
           <input
             className={styles.input}
             type="text"
             placeholder="Subject"
-            required
             value={enteredSubject}
             onChange={subjectChangeHandler}
           />
           <label className={styles.label}></label>
         </li>
 
-        <li className={styles.formMessage}>
+        <li
+          className={`${styles.formMessage} ${
+            !messageValid ? styles.invalid : styles.valid
+          }`}
+        >
           <textarea
             placeholder="Message"
             value={enteredMessage}
             className={styles.formMessageArea}
-            required
             onChange={messageChangeHandler}
 
             // figure out a place holder, message font looks off

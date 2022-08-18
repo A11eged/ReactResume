@@ -1,18 +1,37 @@
 import React from 'react';
 import styles from './HeroHeading.module.css';
+import AnimatedLetters from '../UX/AnimatedLetters';
+import { motion } from 'framer-motion';
 
 const HeroHeading = () => {
-  const heading1 = 'Hi,';
-  const heading2 = "I'm Minh";
+  const text = [
+    { type: 'heading2', text: 'Hi,' },
+    { type: 'heading2', text: "I'm Minh" },
+  ];
+
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.025,
+      },
+    },
+  };
 
   return (
-    <div className={styles.HeroHeading}>
-      <h1 className={styles.Heading}>
-        {heading1}
-        <br />
-        {heading2}
-      </h1>
-    </div>
+    <motion.div className={styles.HeroHeading} variants={container}>
+      <div className={styles.container}>
+        {text.map((item, index) => {
+          return (
+            <AnimatedLetters
+              {...item}
+              key={index}
+              transitionColor={['#08fdd8', '#fff']}
+              styles={{ color: '#fff' }}
+            />
+          );
+        })}
+      </div>
+    </motion.div>
   );
 };
 

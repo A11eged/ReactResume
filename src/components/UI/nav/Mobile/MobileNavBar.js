@@ -10,22 +10,22 @@ const MobileNavBar = () => {
   const navBarItems = [
     {
       title: 'Home',
-      link: '/#home',
+      link: '#hero',
       svg: <HomeSVG />,
     },
     {
       title: 'Work',
-      link: '/#work',
+      link: '#work',
       svg: <WorkSVG />,
     },
     {
       title: 'Contact',
-      link: '/#contact',
+      link: '#contact',
       svg: <ContactSVG />,
     },
     {
       title: 'About',
-      link: '/#about',
+      link: '#about',
       svg: <AboutSVG />,
     },
   ];

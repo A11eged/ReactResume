@@ -1,7 +1,14 @@
 .aboutDescriptionText {
-  font-size: 1rem;
+  font-size: var(--mobileBody);
   margin-bottom: 1rem;
-  margin-left: 1.25rem;
+  margin-left: 1rem;
   margin-right: 1rem;
   color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .aboutDescriptionText {
+    font-size: var(--scalingBody);
+    line-height: 3vw;
+  }
 }

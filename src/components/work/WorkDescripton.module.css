@@ -1,6 +1,12 @@
 .WorkDescriptonTitle {
   color: #fff;
-  font-size: 1rem;
-  /* font-family: 'Roboto', sans-serif; */
+  font-size: var(--mobileBody);
   z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .WorkDescriptonTitle {
+    line-height: 3.5vw;
+    font-size: var(--scalingBody);
+  }
 }

@@ -1,11 +1,24 @@
 import React from 'react';
 import styles from './WorkHeader.module.css';
-
+import AnimatedLetters from '../UX/AnimatedLetters';
+import { motion } from 'framer-motion';
 const WorkHeader = () => {
+  const text = [{ type: 'heading1', text: 'My Portfolio' }];
   return (
-    <div className={styles.WorkHeader}>
-      <h1 className={styles.WorkHeaderTitle}>My Portfolio</h1>
-    </div>
+    <motion.div className={styles.WorkHeader}>
+      <div className={styles.WorkHeaderTitle}>
+        {text.map((item, index) => {
+          return (
+            <AnimatedLetters
+              {...item}
+              key={index}
+              transitionColor={['#08fdd8', '#ff0b56', '#c0c0c0']}
+              endingColor={['#c0c0c0']}
+            />
+          );
+        })}
+      </div>
+    </motion.div>
   );
 };
 

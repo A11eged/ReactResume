@@ -5,13 +5,11 @@
   margin: 0;
 }
 
-html {
-}
-
 body {
   margin: 0;
   background-color: #3f3f3f;
   /* overflow: hidden; */
+  /* height: 100%; */
 }
 
 h1,
@@ -21,7 +19,7 @@ h2 {
 }
 p {
   font-family: 'Noto Sans', sans-serif;
-  line-height: 1.45rem;
+  /* line-height: 1.45rem; */
 }
 /* svg {
   display: block;
@@ -49,4 +47,14 @@ p {
   --Raleway: 'Raleway', sans-serif;
   --Noto: 'Noto Sans', sans-serif;
   background-color: var(--black);
+  /* Font Sizes */
+  --mobileHeading: 1.3rem;
+  --mobileHeadingSmall: 0.9rem;
+  --desktopHeading: 1.8rem;
+  --mobileBody: 0.9rem;
+  --desktopBody: 1.5rem;
+  --scalingBody: 2.5vw;
+  --scalingHero: 4vw;
+  --scalingHeader: 3vw;
+  --scalingSubHeading: 4vw;
 }

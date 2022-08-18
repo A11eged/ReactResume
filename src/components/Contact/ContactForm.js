@@ -14,6 +14,7 @@ const ContactForm = (props) => {
   const [emailValid, setEmailValid] = useState(true);
   const [phoneValid, setPhoneValid] = useState(true);
   const [messageValid, setMessageValid] = useState(true);
+  const [formValid, setFormValid] = useState(true);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -38,6 +39,7 @@ const ContactForm = (props) => {
       setMessageValid(false);
     } else {
       props.onSaveForm(formContent);
+      setFormValid(true);
       setEnteredName('');
       setEnteredSubject('');
       setEnteredEmail('');

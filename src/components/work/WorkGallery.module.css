@@ -1,8 +1,7 @@
-.workGallery {
+/* .workGallery {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   align-content: center;
   width: 100%;
@@ -11,4 +10,4 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} */

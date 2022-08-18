@@ -1,6 +1,14 @@
 .WorkHeaderTitle {
-  font-size: 2rem;
+  font-size: var(--mobileHeading);
+
   margin-bottom: 1rem;
   color: var(--cyan);
   z-index: 2;
 }
+
+@media screen and (min-width: 768px) {
+  .WorkHeaderTitle {
+    font-size: var(--scalingHeader);
+  }
+}
+/* Reorganize Items on Screen Change */

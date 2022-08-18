@@ -2,7 +2,6 @@
   --max-height: 100%;
 }
 .hero {
-  /* padding-left: 9%; */
   width: 100%;
   display: block;
   position: relative;
@@ -11,7 +10,6 @@
 
 .heroContent {
   position: relative;
-  /* height: 0%; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,5 +29,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: calc(var(--max-height) - 80%);
+  padding-top: calc(var(--max-height) - 85%);
+}
+
+@media screen and (min-width: 768px) {
+  .headingContainer {
+    padding-top: calc(var(--max-height) - 95%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headingContainer {
+    padding-top: calc(var(--max-height) - 96%);
+  }
 }

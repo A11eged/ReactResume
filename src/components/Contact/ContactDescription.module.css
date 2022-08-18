@@ -1,6 +1,13 @@
 .contactDescription {
-  font-size: 1rem;
-  line-height: 1.25;
+  font-size: var(--mobileBody);
+  line-height: 1.5;
   margin-bottom: 1rem;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .contactDescription {
+    line-height: 3.5vw;
+    font-size: var(--scalingBody);
+  }
 }

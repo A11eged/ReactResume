@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../UI/Button';
 import styles from './HeroAction.module.css';
+import { HashLink } from 'react-router-hash-link';
 
 const HeroAction = (props) => {
   const redirectHandler = (redirect) => {
@@ -9,13 +10,17 @@ const HeroAction = (props) => {
   };
   return (
     <div className={styles.HeroAction}>
-      <Button onClick={redirectHandler}>
-        Contact <br /> Me!
-      </Button>
+      <HashLink to="/#contact" smooth={true}>
+        <Button onClick={redirectHandler}>
+          Contact <br /> Me!
+        </Button>
+      </HashLink>
 
-      <Button onClick={redirectHandler()}>
-        View My <br /> Work!
-      </Button>
+      <HashLink to="/#work" smooth={true}>
+        <Button onClick={redirectHandler()}>
+          View My <br /> Work!
+        </Button>
+      </HashLink>
     </div>
   );
 };

@@ -11,6 +11,7 @@ const WalletViewSVG = (props) => {
       width={props.width}
       className={styles.WalletViewSVG}
       enableBackground="new 0 0 100 100"
+      style={{ borderRadius: '3%' }}
     >
       <path
         style={{

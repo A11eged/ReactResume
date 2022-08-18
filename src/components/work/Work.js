@@ -1,14 +1,21 @@
 import React from 'react';
+import { Breakpoint, setDefaultBreakpoints } from 'react-socks';
 import styles from './Work.module.css';
 import WorkGallery from './WorkGallery';
 import WorkHeader from './WorkHeader';
 import WorkDescripton from './WorkDescription';
+
 const Work = () => {
   return (
-    <div className={styles.work} id="#work">
+    <div className={styles.work} id="work">
       <WorkHeader></WorkHeader>
       <WorkDescripton></WorkDescripton>
-      <WorkGallery></WorkGallery>
+      <Breakpoint m down>
+        <WorkGallery></WorkGallery>
+      </Breakpoint>
+      <Breakpoint m up>
+        <WorkGallery></WorkGallery>
+      </Breakpoint>
     </div>
   );
 };

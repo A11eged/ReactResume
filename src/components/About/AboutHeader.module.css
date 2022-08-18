@@ -2,4 +2,11 @@
   color: var(--cyan);
   padding-top: 2rem;
   margin: 1rem;
+  font-size: var(--mobileHeading);
+}
+
+@media screen and (min-width: 768px) {
+  .AboutHeaderTitle {
+    font-size: var(--scalingHeader);
+  }
 }

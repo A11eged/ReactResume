@@ -1,5 +1,17 @@
 .subHeading {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   /* margin: 0.5rem; */
   color: var(--light-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .subHeading {
+    font-size: var(--scalingSubHeading);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .subHeading {
+    font-size: var(--scalingSubHeading);
+  }
 }

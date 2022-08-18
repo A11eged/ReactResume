@@ -5,7 +5,7 @@ import AboutDescription from './AboutDescription';
 
 const About = () => {
   return (
-    <div className={styles.about} id="#about">
+    <div className={styles.about} id="about">
       <AboutHeader></AboutHeader>
       <AboutDescription></AboutDescription>
     </div>

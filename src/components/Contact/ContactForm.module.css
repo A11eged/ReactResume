@@ -114,11 +114,9 @@ textarea {
 .subject label {
   position: absolute;
   width: 100%;
-  height: 25%;
-  bottom: -2px;
-  transform: translateY(-10%);
+  height: 20%;
+  bottom: -5px;
   transition: all 0.3s ease;
-  /* border-bottom: 2px solid var(--cyan); */
 }
 
 .formName.invalid label,
@@ -128,7 +126,10 @@ textarea {
 .subject.invalid label {
   border-bottom: 2px solid var(--red);
   left: -1px;
-  /* transition: all 0.3s ease; */
+  bottom: -1px;
+  height: 10%;
+  transition: all 750ms ease;
+  z-index: 2;
 }
 
 .formName.valid label,
@@ -138,7 +139,9 @@ textarea {
 .subject.valid label {
   left: -1px;
   width: 1%;
-  transition: all 500ms ease;
+  bottom: -1px;
+  height: 10%;
+  transition: all 750ms ease;
 }
 
 .formName.valid input:focus + label,
@@ -146,7 +149,7 @@ textarea {
 .formPhone.valid input:focus + label,
 .formMessage.valid textarea:focus + label,
 .subject.valid input:focus + label {
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
   width: 100%;
   border-bottom: 2px solid var(--cyan);
   left: -1px;
@@ -158,12 +161,18 @@ textarea {
 .formPhone label::after,
 .formMessage label::after,
 .subject label::after {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   height: 1%;
   bottom: -2px;
-  transform: translateY(-10%);
   left: -1px;
-  transform: translateX(-100%);
-  transition: all 0.3s ease;
+  transition: all 750ms ease; */
+}
+
+.formButton.invalidButton {
+  background-color: var(--red);
+}
+
+.formButton.validButton {
+  background-color: var(--cyan);
 }

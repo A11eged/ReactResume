@@ -1,10 +1,17 @@
 .HeroHeading {
+  /* font: var(--Raleway); */
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: var(--white);
 }
 
-.Heading {
-  font-size: 3rem;
-  color: var(--white);
+@media screen and (min-width: 768px) {
+  .HeroHeading {
+    font-size: var(--scalingHero);
+    /* font-size: 4rem; */
+    line-height: 5vw;
+  }
 }

@@ -45,9 +45,9 @@ const Template = (props) => {
 
   const prop = [
     {
-      title: 'Crypto Options',
+      title: 'New Item',
       description:
-        'A web application that allows users to buy and sell options on cryptocurrencies.',
+        'I am always coming up with new things to develop and push out! ',
       link: 'https://crypto-options.netlify.com/',
       linkText: 'View Project',
     },

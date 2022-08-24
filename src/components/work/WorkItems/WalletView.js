@@ -52,7 +52,7 @@ const WalletView = (props) => {
     {
       title: 'Wallet View',
       description:
-        'A web application that allows users to track their Ethereum balance. The application is built using React and deployed on Netlify.',
+        ' The application is built using React and deployed on Amazon Web Services. This website uses a Python backend and Pandas to create Dataframes which, after some functions are called, returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.',
       link: 'https://eth-tracker.netlify.com/',
       linkText: 'View Project',
     },

@@ -17,7 +17,7 @@ const Contact = () => {
     console.log(formData);
   };
 
-  const item = 
+  // const item =
 
   return (
     <Grid container direction={'row'} columns={2}>

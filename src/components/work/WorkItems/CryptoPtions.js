@@ -45,9 +45,9 @@ const CryptoPtions = (props) => {
   }));
   const prop = [
     {
-      title: 'Test Options',
+      title: 'Crypto Options',
       description:
-        'A web application that allows users to buy and sell options on cryptocurrencies.',
+        'A web application that allows users to buy and sell cryptocurrency options in a more calculated manner. The application allows user to view projected pricing by utilizing the Black Scholes Algorithm to determine the price of a given contract as variables change',
       link: 'https://crypto-options.netlify.com/',
       linkText: 'View Project',
     },

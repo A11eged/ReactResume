@@ -64,7 +64,7 @@ const CryptoPtions = (props) => {
         />
       </div>
 
-      <Breakpoint m down>
+      <Breakpoint s down>
         <div
           className={styles.textBox}
           styles={{ width: props.containerWidth }}
@@ -87,6 +87,7 @@ const CryptoPtions = (props) => {
             aria-expanded={expanded}
             aria-label="show more"
             style={{
+              margin: '0 auto',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -95,25 +96,29 @@ const CryptoPtions = (props) => {
             <ExpandMoreIcon
               style={{
                 color: '#fff',
-                display: 'flex',
-                position: 'absolute',
-                alignItems: 'center',
-                alignContent: 'center',
+                width: '2.5rem',
+                height: '2.5rem',
               }}
             />
           </ExpandMore>
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography paragraph className={styles.title}>
+            <Typography paragraph className={styles.title} style={{}}>
               {prop[0].title}
             </Typography>
             <Typography paragraph className={styles.description}>
               {prop[0].description}
             </Typography>
             <a className={styles.link} href={prop[0].link}>
-              <Button type="button" className={styles.Button}>
-                View Project!
+              <Button
+                type="button"
+                className={styles.Button}
+                height="auto"
+                width="9rem"
+                color="black"
+              >
+                View Project
               </Button>
             </a>
           </CardContent>

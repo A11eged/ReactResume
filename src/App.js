@@ -17,12 +17,19 @@ import UpArrow from './components/UX/UpArrow';
 import MarginRight from './components/UX/MarginRight';
 
 function App() {
+  // setDefaultBreakpoints([
+  //   { xs: 0 },
+  //   { s: 376 },
+  //   { m: 768 },
+  //   { l: 992 },
+  //   { x: 1200 },
+  // ]);
   setDefaultBreakpoints([
     { xs: 0 },
-    { s: 376 },
-    { m: 768 },
-    { l: 992 },
-    { x: 1200 },
+    { s: 475 },
+    { m: 769 },
+    { l: 1024 },
+    { xl: 2048 },
   ]);
   return (
     <BrowserRouter>
@@ -30,8 +37,9 @@ function App() {
         <div className="hero-container">
           {/* <MarginRight /> */}
           <Breakpoint m down>
-            <MobileNavBar></MobileNavBar>
+            <MobileNavBar />
           </Breakpoint>
+
           <Hero></Hero>
 
           <Work></Work>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const HeroHeading = () => {
   const text = [
-    { type: 'heading2', text: 'Hi,' },
+    { type: 'heading2', text: 'Hi!' },
     { type: 'heading2', text: "I'm Minh" },
   ];
 

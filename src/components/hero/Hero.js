@@ -16,7 +16,17 @@ const Hero = () => {
         <div className={styles.headingContainer}>
           <HeroHeading></HeroHeading>
           <HeroSubheading></HeroSubheading>
-          <ProfileSVG />
+          <ProfileSVG
+            right={'0'}
+            width={'125'}
+            height={'125'}
+            w={'50'}
+            h={'50'}
+            scale={'1.2'}
+            preserveAspectRatio={'xMidYMid meet'}
+            x={'0'}
+            y={'0'}
+          />
         </div>
         <HeroAction></HeroAction>
       </div>

@@ -4,9 +4,16 @@
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width< 768px) {
   .WorkDescriptonTitle {
     line-height: 3.5vw;
     font-size: var(--scalingBody);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .WorkDescriptonTitle {
+    /* line-height: 1.5vw; */
+    font-size: 1.25rem;
   }
 }

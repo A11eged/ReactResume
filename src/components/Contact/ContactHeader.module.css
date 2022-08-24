@@ -13,3 +13,17 @@
     font-size: var(--scalingHeader);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .contactHeader {
+    /* line-height: 1.5vw; */
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .contactHeader {
+    font-size: 3rem;
+  }
+}

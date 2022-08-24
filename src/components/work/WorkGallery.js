@@ -15,10 +15,11 @@ const WorkGallery = (props) => {
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#ccc',
     ...theme.typography.body2,
     elevation: 2,
-    height: '100%',
-    width: '100%',
-    // margin: '2rem',
-    padding: theme.spacing(1.5),
+    height: '95%',
+    width: '95%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
@@ -41,7 +42,7 @@ const WorkGallery = (props) => {
       alignItems={'flex-start'}
       width={'100%'}
       height={'100%'}
-      columns={{ xs: 1, sm: 1, md: 4, lg: 4, xl: 4 }}
+      columns={{ xs: 1, sm: 1, md: 5, lg: 4, xl: 4 }}
     >
       <Grid item xs={3} s={3} md={1} lg={1} margin={{ xs: '1rem', md: '1rem' }}>
         <Item>

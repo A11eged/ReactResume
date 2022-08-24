@@ -5,11 +5,9 @@ const ProfileSVG = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 50 50"
-      enableBackground={`new 0 0 50 50`}
-      display="block"
-      height={125}
-      width={125}
+      viewBox={[props.x, props.y, props.w, props.h]}
+      width={props.width * props.scale}
+      height={props.height * props.scale}
     >
       <circle
         cx={24.67}

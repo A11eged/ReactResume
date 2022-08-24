@@ -40,3 +40,17 @@
   box-shadow: none;
   transform: translateY(0);
 }
+
+@media screen and (min-width: 1024px) {
+  .Button {
+    min-width: 10rem;
+    min-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .Button {
+    min-width: 10rem;
+    min-height: 4rem;
+  }
+}

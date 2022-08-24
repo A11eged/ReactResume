@@ -10,12 +10,7 @@ const Work = () => {
     <div className={styles.work} id="work">
       <WorkHeader></WorkHeader>
       <WorkDescripton></WorkDescripton>
-      <Breakpoint m down>
-        <WorkGallery></WorkGallery>
-      </Breakpoint>
-      <Breakpoint m up>
-        <WorkGallery></WorkGallery>
-      </Breakpoint>
+      <WorkGallery></WorkGallery>
     </div>
   );
 };

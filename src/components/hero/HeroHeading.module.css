@@ -10,8 +10,15 @@
 
 @media screen and (min-width: 768px) {
   .HeroHeading {
-    font-size: var(--scalingHero);
+    font-size: 3rem;
     /* font-size: 4rem; */
-    line-height: 5vw;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .HeroHeading {
+    font-size: 4rem;
+    line-height: 4.5rem;
   }
 }

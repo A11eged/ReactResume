@@ -12,6 +12,12 @@
 
 @media screen and (min-width: 1024px) {
   .subHeading {
-    font-size: var(--scalingSubHeading);
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .subHeading {
+    font-size: 2.5rem;
   }
 }

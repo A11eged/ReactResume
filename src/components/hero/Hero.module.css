@@ -42,4 +42,14 @@
   .headingContainer {
     padding-top: calc(var(--max-height) - 96%);
   }
+
+  .hero {
+    margin-bottom: 9vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hero {
+    margin-bottom: 13vw;
+  }
 }

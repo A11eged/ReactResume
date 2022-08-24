@@ -10,3 +10,10 @@
     font-size: var(--scalingHeader);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .AboutHeaderTitle {
+    /* line-height: 1.5vw; */
+    font-size: 2rem;
+  }
+}

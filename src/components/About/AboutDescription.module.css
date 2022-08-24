@@ -12,3 +12,10 @@
     line-height: 3vw;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .aboutDescriptionText {
+    line-height: 1.7rem;
+    font-size: 1.25rem;
+  }
+}

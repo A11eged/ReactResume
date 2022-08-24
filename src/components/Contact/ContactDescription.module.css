@@ -11,3 +11,10 @@
     font-size: var(--scalingBody);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .contactDescription {
+    line-height: 1.7rem;
+    font-size: 1.25rem;
+  }
+}

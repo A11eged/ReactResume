@@ -12,3 +12,10 @@
   }
 }
 /* Reorganize Items on Screen Change */
+
+@media screen and (min-width: 1024px) {
+  .WorkHeaderTitle {
+    /* line-height: 3.5vw; */
+    font-size: 2rem;
+  }
+}

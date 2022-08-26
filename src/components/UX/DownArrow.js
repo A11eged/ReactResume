@@ -29,7 +29,7 @@ const DownArrow = (props) => (
       whileInView={{ opacity: 1 }}
       initial={{ y: 0 }}
       animate={{ y: 25 }}
-      transition={{ duration: 1.5, repeat: Infinity, delay: 1 }}
+      transition={{ duration: 1.5, repeat: Infinity, delay: 1.5 }}
     />
   </motion.svg>
 );

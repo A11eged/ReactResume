@@ -104,12 +104,12 @@ const CryptoPtions = (props) => {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography paragraph className={styles.title} style={{}}>
+            <h2 className={styles.title} style={{}}>
               {prop[0].title}
-            </Typography>
-            <Typography paragraph className={styles.description}>
+            </h2>
+            <p className={styles.description}>
               {prop[0].description}
-            </Typography>
+            </p>
             <a className={styles.link} href={prop[0].link}>
               <Button
                 type="button"

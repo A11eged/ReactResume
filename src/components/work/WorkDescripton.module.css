@@ -6,14 +6,14 @@
 
 @media screen and (min-width< 768px) {
   .WorkDescriptonTitle {
-    line-height: 3.5vw;
+    line-height: 3rem;
     font-size: var(--scalingBody);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .WorkDescriptonTitle {
-    /* line-height: 1.5vw; */
+    line-height: 2rem;
     font-size: 1.25rem;
   }
 }

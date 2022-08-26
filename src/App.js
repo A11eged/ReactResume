@@ -15,6 +15,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import UpArrow from './components/UX/UpArrow';
 import MarginRight from './components/UX/MarginRight';
+import TechStack from './components/UX/TechStack';
 
 function App() {
   // setDefaultBreakpoints([
@@ -35,13 +36,12 @@ function App() {
     <BrowserRouter>
       <BreakpointProvider>
         <div className="hero-container">
-          {/* <MarginRight /> */}
-          <Breakpoint m down>
+          <Breakpoint s down>
             <MobileNavBar />
           </Breakpoint>
 
           <Hero></Hero>
-
+          {/* <TechStack></TechStack> */}
           <Work></Work>
 
           <About></About>

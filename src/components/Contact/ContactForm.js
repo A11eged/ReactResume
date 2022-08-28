@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './ContactForm.module.css';
+import emailjs from '@emailjs/browser';
 import Button from '../UI/Button';
 
 const ContactForm = (props) => {
+  const form = useRef();
   const [enteredName, setEnteredName] = useState('');
   const [enteredSubject, setEnteredSubject] = useState('');
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -15,6 +17,10 @@ const ContactForm = (props) => {
   const [phoneValid, setPhoneValid] = useState(true);
   const [messageValid, setMessageValid] = useState(true);
   const [formValid, setFormValid] = useState(true);
+
+  const SERVICE_ID = 'service_z2l2snl';
+  const TEMPLATE_ID = 'template_77ohp9i';
+  const USER_ID = 'KRbCPh6mGObemWGfX';
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -46,6 +52,15 @@ const ContactForm = (props) => {
       setEnteredPhone('');
       setEnteredMessage('');
     }
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   const nameChangeHandler = (event) => {
@@ -99,6 +114,7 @@ const ContactForm = (props) => {
 
   return (
     <form
+      ref={form}
       onSubmit={submitHandler}
       className={styles.contactForm}
       autoComplete="off"
@@ -114,6 +130,7 @@ const ContactForm = (props) => {
             type="text"
             placeholder="Name"
             onChange={nameChangeHandler}
+            name="user_name"
             value={enteredName}
           />
           <label className={styles.label}></label>
@@ -123,6 +140,7 @@ const ContactForm = (props) => {
             className={styles.input}
             type="phone"
             placeholder="Phone"
+            name="user_phone"
             value={enteredPhone}
             onChange={phoneChangeHandler}
           />
@@ -137,6 +155,7 @@ const ContactForm = (props) => {
             className={styles.input}
             type="email"
             placeholder="Email"
+            name="user_email"
             value={enteredEmail}
             onChange={emailChangeHandler}
           />
@@ -151,6 +170,7 @@ const ContactForm = (props) => {
           <input
             className={styles.input}
             type="text"
+            name="user_subject"
             placeholder="Subject"
             value={enteredSubject}
             onChange={subjectChangeHandler}
@@ -165,6 +185,7 @@ const ContactForm = (props) => {
         >
           <textarea
             placeholder="Message"
+            name="user_message"
             value={enteredMessage}
             className={styles.formMessageArea}
             onChange={messageChangeHandler}

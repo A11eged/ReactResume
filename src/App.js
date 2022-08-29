@@ -5,7 +5,6 @@ import {
   BreakpointProvider,
 } from 'react-socks';
 import { BrowserRouter } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
 import './App.css';
 import MobileNavBar from './components/UI/nav/Mobile/MobileNavBar';
 import Hero from './components/hero/Hero';
@@ -13,9 +12,6 @@ import Hero from './components/hero/Hero';
 import Work from './components/work/Work';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import UpArrow from './components/UX/UpArrow';
-import MarginRight from './components/UX/MarginRight';
-import TechStack from './components/UX/TechStack';
 
 function App() {
   // setDefaultBreakpoints([

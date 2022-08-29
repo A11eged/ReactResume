@@ -3,6 +3,7 @@ import { Breakpoint } from 'react-socks';
 import { HashLink } from 'react-router-hash-link';
 import UpArrow from '../UX/UpArrow';
 import styles from './Contact.module.css';
+import ContactRefs from './ContactRefs';
 import ContactDescription from './ContactDescription';
 import ContactForm from './ContactForm';
 import ContactHeader from './ContactHeader';
@@ -83,6 +84,9 @@ const Contact = () => {
         <UpArrow fill={'#fff'} left={'-1rem'} bottom={'2rem'} /> */}
           </HashLink>
         </div>
+      </Grid>
+      <Grid item xs={2} s={2} md={1} l={1} xl={1}>
+        <ContactRefs></ContactRefs>
       </Grid>
     </Grid>
   );

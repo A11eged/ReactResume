@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/HungryMidas/HungryMidas.github.io/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/HungryMidas/HungryMidas.github.io/actions/workflows/node.js.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

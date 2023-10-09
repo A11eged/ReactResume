@@ -53,7 +53,7 @@ const WalletView = (props) => {
       title: 'Wallet View',
       description:
         ' The application is built using React and deployed on Amazon Web Services. This website uses a Python backend and Pandas to create Dataframes which, after some functions are called, returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.',
-      link: 'https://eth-tracker.netlify.com/',
+      link: 'http://walletview.us-east-1.elasticbeanstalk.com/#home',
       linkText: 'View Project',
     },
   ];
@@ -112,9 +112,7 @@ const WalletView = (props) => {
             <h2 className={styles.title} style={{}}>
               {prop[0].title}
             </h2>
-            <p className={styles.description}>
-              {prop[0].description}
-            </p>
+            <p className={styles.description}>{prop[0].description}</p>
             <a className={styles.link} href={prop[0].link}>
               <Button
                 type="button"

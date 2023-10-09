@@ -6,13 +6,7 @@ import Instagram from './icons/instagram';
 import Linkedin from './icons/linkedin';
 
 const ContactRefs = () => {
-  const mouseInHandler = (e) => {
-    // e.target.classList.add(styles.hover);
-    console.log(e.target.style.color);
-  };
-  const mouseOutHandler = (e) => {
-    // e.target.classList.remove(styles.hover);
-  };
+
   const contacts = [
     {
       label: 'Github',

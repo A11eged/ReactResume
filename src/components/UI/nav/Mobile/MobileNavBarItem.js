@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './MobileNavBarItem.module.css';
-import { BrowserRouter } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const MobileNavBarItem = (props) => {

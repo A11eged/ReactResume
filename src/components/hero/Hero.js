@@ -10,7 +10,6 @@ import HeroHeading from './HeroHeading';
 import HeroSubheading from './HeroSubheading';
 import ProfileSVG from './HeroSVG/ProfileSVG';
 import HeroAction from './HeroAction';
-import UpArrow from '../UX/UpArrow';
 import DownArrow from '../UX/DownArrow';
 
 const Hero = () => {

@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-
-import styles from './WorkGallery.module.css';
 import Template from './WorkItems/Template';
 import WalletView from './WorkItems/WalletView';
 import CryptoPtions from './WorkItems/CryptoPtions';
 
 const WorkGallery = (props) => {
-  const [isShown, setIsShown] = useState(false);
 
   const Item = styled(Card)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#ccc',
@@ -28,12 +25,6 @@ const WorkGallery = (props) => {
     height: '100%',
     viewBox: '0 0 100 40',
   };
-
-  const mouseHandler = (e) => {
-    console.log(e.target.style);
-    e.target.style.transform = 'scale(1.1)';
-  };
-
   return (
     <Grid
       container

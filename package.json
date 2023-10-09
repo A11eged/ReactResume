@@ -50,7 +50,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://hungrymidas.github.io/HungryMidas.github.io",
+  "homepage": "https://hungrymidas.github.io/MidasPortfolio",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HungryMidas.github.io/static/css/main.c213d340.css",
+    "main.js": "/HungryMidas.github.io/static/js/main.b05d9fe2.js",
+    "static/js/787.59717ab6.chunk.js": "/HungryMidas.github.io/static/js/787.59717ab6.chunk.js",
+    "index.html": "/HungryMidas.github.io/index.html",
+    "main.c213d340.css.map": "/HungryMidas.github.io/static/css/main.c213d340.css.map",
+    "main.b05d9fe2.js.map": "/HungryMidas.github.io/static/js/main.b05d9fe2.js.map",
+    "787.59717ab6.chunk.js.map": "/HungryMidas.github.io/static/js/787.59717ab6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c213d340.css",
+    "static/js/main.b05d9fe2.js"
+  ]
+}

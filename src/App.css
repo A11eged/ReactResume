@@ -41,17 +41,6 @@
   --light-light-background: #e0e0e0;
   --light-light-gray: #3f3f3f;
   --light-dark-gray: #aeaeae;
-
-  /* Font Sizes */
-  /* --mobileHeading: 1.3rem;
-  --mobileHeadingSmall: 0.9rem;
-  --desktopHeading: 1.8rem;
-  --mobileBody: 0.9rem;
-  --desktopBody: 1.5rem;
-  --scalingBody: 2.5vw;
-  --scalingHero: 4vw;
-  --scalingHeader: 3vw;
-  --scalingSubHeading: 4vw; */
 }
 
 [data-theme='light'] {

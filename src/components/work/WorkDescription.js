@@ -2,11 +2,10 @@ import React, { useRef } from 'react';
 import styles from './WorkDescripton.module.css';
 
 const WorkDescripton = () => {
-  const test = useRef(null);
   return (
-    <div ref={test} className={styles.WorkDescripton}>
+    <div className={styles.WorkDescripton}>
       <p className={styles.WorkDescriptonTitle}>
-        This is a small gallery of recent projects that I chose, and I will be
+        This is a small gallery of recent projects that I developed. Stay tuned for more projects as I will
         consistently be adding more both here and on Github!
       </p>
     </div>

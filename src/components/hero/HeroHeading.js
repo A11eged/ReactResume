@@ -2,11 +2,19 @@ import React from 'react';
 import styles from './HeroHeading.module.css';
 import AnimatedLetters from '../UX/AnimatedLetters';
 import { motion } from 'framer-motion';
+import { ThemeContext } from '../Context/ThemeContext';
+import { BreakpointProvider, Breakpoint } from 'react-socks';
 
 const HeroHeading = () => {
-  const text = [
-    { type: 'heading2', text: 'Hi!' },
-    { type: 'heading2', text: "I'm Minh" },
+  const { theme } = React.useContext(ThemeContext);
+
+  const headingSmall = [
+    { type: 'heading2', text: 'Minh' },
+    { type: 'heading2', text: "Tran" },
+  ];
+
+  const headingLarge = [
+    { type: 'heading2', text: 'Minh Tran' },
   ];
 
   const container = {
@@ -18,20 +26,40 @@ const HeroHeading = () => {
   };
 
   return (
-    <motion.div className={styles.HeroHeading} variants={container}>
-      <div className={styles.container}>
-        {text.map((item, index) => {
-          return (
-            <AnimatedLetters
-              {...item}
-              key={index}
-              transitionColor={['#08fdd8', '#fff']}
-              styles={{ color: '#fff' }}
-            />
-          );
-        })}
-      </div>
-    </motion.div>
+    <BreakpointProvider>
+      <Breakpoint s down>
+        <motion.div className={styles.HeroHeading} variants={container}>
+          <div className={styles.container}>
+            {headingSmall.map((item, index) => {
+              return (
+                <AnimatedLetters
+                  {...item}
+                  key={index}
+                  transitionColor={theme === 'dark' ?  ['#fff', '#08fdd8'] : ['#2b2b2b', '#08fdd8']}
+                  styles={{ color: theme === 'dark' ? '#fff' : '#2b2b2b' }}
+              />
+              );
+            })}
+            </div>
+        </motion.div>
+      </Breakpoint>
+      <Breakpoint m up>
+        <motion.div className={styles.HeroHeading} variants={container}>
+          <div className={styles.container}>
+            {headingLarge.map((item, index) => {
+              return (
+                <AnimatedLetters
+                  {...item}
+                  key={index}
+                  transitionColor={theme === 'dark' ?  ['#fff', '#08fdd8'] : ['#2b2b2b', '#08fdd8']}
+                  styles={{ color: theme === 'dark' ? '#fff' : '#2b2b2b' }}
+              />
+              );
+            })}
+            </div>
+        </motion.div>
+      </Breakpoint>
+    </BreakpointProvider>
   );
 };
 

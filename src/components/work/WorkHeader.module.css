@@ -1,21 +1,13 @@
 .WorkHeaderTitle {
-  font-size: var(--mobileHeading);
-
-  margin-bottom: 1rem;
-  color: var(--cyan);
+  font-size: var(--heading);
+  margin-bottom: 1.5vh;
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
-  .WorkHeaderTitle {
-    font-size: var(--scalingHeader);
-  }
+[data-theme="dark"] .WorkHeaderTitle {
+  color: var(--cyan);
 }
-/* Reorganize Items on Screen Change */
 
-@media screen and (min-width: 1024px) {
-  .WorkHeaderTitle {
-    /* line-height: 3.5vw; */
-    font-size: 2rem;
-  }
+[data-theme="light"] .WorkHeaderTitle {
+  color: var(--font-color);
 }

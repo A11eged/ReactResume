@@ -18,7 +18,6 @@ const WorkGallery = (props) => {
     marginRight: 'auto',
     padding: theme.spacing(1),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
   }));
   const mobileProps = {
     width: '100%',
@@ -38,7 +37,6 @@ const WorkGallery = (props) => {
       <Grid item xs={3} s={3} md={1} lg={1} margin={{ xs: '1rem', md: '1rem' }}>
         <Item>
           <Template
-            // containerWidth={'%'}
             width={mobileProps.width}
             height={mobileProps.height}
           ></Template>

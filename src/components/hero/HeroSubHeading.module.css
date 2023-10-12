@@ -1,23 +1,72 @@
-.subHeading {
+.subHeading, .rotatingText {
   font-size: 1.2rem;
-  /* margin: 0.5rem; */
+  align-items: center;
+  font: var(--Raleway);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2rem; 
+}
+
+.subHeading {
+  display: flex;
+  align-items: center;
+}
+
+[data-theme="dark"] .subHeading {
   color: var(--light-gray);
 }
 
-@media screen and (min-width: 768px) {
-  .subHeading {
-    font-size: var(--scalingSubHeading);
+[data-theme="light"] .subHeading {
+  color: var(--dark-gray);
+}
+
+.rotatingContainer {
+  display: inline-flex;
+  width: 20vw;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.container {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .subHeading {
-    font-size: 2.5rem;
-  }
+.rotatingText {
+  animation: fadeIn 1s forwards;
+  display: inline-block;
+  transition: color 0.5s; 
+  vertical-align: middle;
 }
 
-@media screen and (min-width: 2000px) {
-  .subHeading {
-    font-size: 2.5rem;
-  }
+/* Light Mode */
+[data-theme="light"] .container {
+  color: var(--font-color);
+}
+
+[data-theme="light"] .rotatingText {
+  color: var(--red);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .container {
+  color: var(--font-color);
+}
+
+[data-theme="dark"] .rotatingText {
+  color: var(--cyan);
 }

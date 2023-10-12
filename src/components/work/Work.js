@@ -7,9 +7,9 @@ import WorkDescripton from './WorkDescription';
 const Work = () => {
   return (
     <div className={styles.work} id="work">
-      <WorkHeader></WorkHeader>
-      <WorkDescripton></WorkDescripton>
-      <WorkGallery></WorkGallery>
+      <WorkHeader/>
+      <WorkDescripton/>
+      <WorkGallery/>
     </div>
   );
 };

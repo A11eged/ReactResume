@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {
   Breakpoint,
   setDefaultBreakpoints,
@@ -8,19 +8,15 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import MobileNavBar from './components/UI/nav/Mobile/MobileNavBar';
 import Hero from './components/hero/Hero';
-// import RegularNavBar from './components/UI/nav/Regular/RegularNavBar';
 import Work from './components/work/Work';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Button from './components/UI/Button';
+import { ThemeButton } from './components/UI/ThemeButton';
+import { ThemeProvider, ThemeContext} from './components/Context/ThemeContext';
 
 function App() {
-  // setDefaultBreakpoints([
-  //   { xs: 0 },
-  //   { s: 376 },
-  //   { m: 768 },
-  //   { l: 992 },
-  //   { x: 1200 },
-  // ]);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   setDefaultBreakpoints([
     { xs: 0 },
     { s: 475 },
@@ -28,24 +24,28 @@ function App() {
     { l: 1024 },
     { xl: 2048 },
   ]);
+
   return (
     <BrowserRouter>
       <BreakpointProvider>
         <div className="hero-container">
-          <Breakpoint s down>
+          {/* <Breakpoint s down>
             <MobileNavBar />
-          </Breakpoint>
-
-          <Hero></Hero>
-          {/* <TechStack></TechStack> */}
-          <Work></Work>
-
-          <About></About>
-          <Contact></Contact>
+          </Breakpoint> */}
+          <ThemeButton id='theme-toggle-button' onClick={toggleTheme}></ThemeButton>
+          <Button id='theme-toggle-button' onClick={toggleTheme}>{theme}</Button>
+          <Hero/>
+          <Work/>
+          <About/>
+          <Contact/>
         </div>
       </BreakpointProvider>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default () => (
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
+);

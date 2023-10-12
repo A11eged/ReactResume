@@ -12,6 +12,7 @@ const tagMap = {
   paragraph: 'p',
   heading1: 'h1',
   heading2: 'h2',
+  div: 'div'
 };
 
 // Handles the deconstruction of each word and character to setup for the
@@ -53,7 +54,7 @@ const AnimatedLetters = (props) => {
                 >
                   <motion.span
                     whileHover={{
-                      // scale: [1.03, 1, 1.02, 1.1, 1],
+                      scale: [1.03, 1, 1.02, 1.1, 1],
                       translateY: [
                         '0%',
                         '-15%',
@@ -74,7 +75,7 @@ const AnimatedLetters = (props) => {
                       damping: 10,
                       duration: 1,
                       ease: 'easeInOut',
-                      // color: props.endingColor,
+                      color: props.endingColor,
                       // times: [0, 0.2, 0.4, 0.6, 1],
                       repeatDelay: 1,
                     }}

@@ -1,19 +1,13 @@
 .WorkDescriptonTitle {
-  color: #fff;
-  font-size: var(--mobileBody);
+  font-size: var(--body);
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
-  .WorkDescriptonTitle {
-    line-height: 3.75vw;
-    font-size: var(--scalingBody);
-  }
+[data-theme="dark"] .WorkDescriptonTitle {
+  color: var(--dark-font-color);
 }
 
-@media screen and (min-width: 1024px) {
-  .WorkDescriptonTitle {
-    line-height: 2rem;
-    font-size: 1.25rem;
-  }
+[data-theme="light"] .WorkDescriptonTitle {
+  color: var(--light-font-color);
 }
+

@@ -8,9 +8,9 @@ const WorkItem = (props) => {
   return (
     <Card className={styles.workItem}>
       <div>{props.image && <img src={props.image} alt={props.title} />}</div>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-      <a href={props.link}>{props.linkText}</a>
+      <h2 className={styles.title}>{props.title}</h2>
+      <p className={styles.description}>{props.description}</p>
+      <a className={styles.link} href={props.link}>{props.linkText}</a>
     </Card>
   );
 };

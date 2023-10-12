@@ -18,8 +18,6 @@ const Contact = () => {
     console.log(formData);
   };
 
-  // const item =
-
   return (
     <Grid container direction={'row'} columns={2}>
       <Grid item xs={2} s={2} md={1} l={1} xl={1}>
@@ -80,8 +78,6 @@ const Contact = () => {
                 y={'0'}
               />
             </Breakpoint>
-            {/* <UpArrow fill={'#fff'} right={'-1rem'} bottom={'2rem'} />
-        <UpArrow fill={'#fff'} left={'-1rem'} bottom={'2rem'} /> */}
           </HashLink>
         </div>
       </Grid>

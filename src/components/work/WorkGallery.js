@@ -66,7 +66,6 @@ const WorkGallery = (props) => {
       <Grid item xs={3} s={3} md={1} lg={1} margin={{ xs: '1rem', md: '1rem' }}>
         <Item>
           <WorkItem
-            // containerWidth={'%'}
             svg={WorkItems[0].svg}
             title={WorkItems[0].title}
             description={WorkItems[0].description}

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Button from '../UI/Button';
 import { Breakpoint } from 'react-socks';
 import Card from './Card';
-import WalletViewSVG from './images/WalletViewSVG';
 import styles from './WorkItem.module.css';
 import { styled } from '@mui/material/styles';
 import CardContent from '@mui/material/CardContent';

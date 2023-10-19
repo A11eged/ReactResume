@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styles from './AnimatedLettersHeader.module.css';
-import AnimatedLetters from '../UX/AnimatedLetters';
+import AnimatedLetters from './AnimatedLetters';
 import { motion } from 'framer-motion';
 import { ThemeContext } from '../Context/ThemeContext'
 

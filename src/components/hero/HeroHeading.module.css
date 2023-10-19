@@ -1,34 +1,22 @@
-[data-theme="dark"] .HeroHeading {
-  color: var(--font-color);
-}
-
-[data-theme="light"] .HeroHeading {
-  color: var(--font-color);
-}
-
 .HeroHeading {
+  color: var(--font-color);
   font: var(--Raleway);
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: calc(1rem + 1vw);
   font-size: calc(3rem + 0.390625vw);
   line-height: calc(4rem + 0.390625vw);
 }
 
-/* For tablets and small desktops */
-@media (min-width: 600px) {
+@media (min-width: 789px) {
   .HeroHeading {
-    outline: red 1px solid;
     font-size: calc(3rem + 0.390625vw);
     line-height: calc(4.5rem + 0.390625vw);
   }
 }
 
-/* For larger desktops */
 @media (min-width: 1024px) {
   .HeroHeading {
-    outline: blue 1px solid;
-
     font-size: calc(3rem + 0.390625vw);
     line-height: calc(4rem + 0.390625vw);
   }

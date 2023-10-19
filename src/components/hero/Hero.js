@@ -26,21 +26,17 @@ const Hero = () => {
       <div className={styles.hero} id="hero">
         <div className={styles.heroContent}>
           <div className={styles.headingContainer}>
-            <HeroHeading></HeroHeading>
-            <HeroSubheading></HeroSubheading>
+            <HeroHeading/>
             <ProfileSVG
-              right={'0'}
-              width={'125'}
-              height={'125'}
               w={'50'}
               h={'50'}
-              scale={'1.2'}
-              preserveAspectRatio={'xMidYMid meet'}
+              scale={'1'}
               x={'0'}
               y={'0'}
             />
+            <HeroSubheading/>
           </div>
-          <HeroAction></HeroAction>
+          <HeroAction/>
         </div>
         <HashLink to={'#work'} smooth={true}>
           <Breakpoint s down>

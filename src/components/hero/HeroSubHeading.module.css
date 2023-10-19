@@ -1,23 +1,8 @@
 .subHeading, .rotatingText {
   font-size: var(--body);
   align-items: center;
-  font: var(--Raleway);
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.2rem; 
-}
-
-.subHeading {
-  display: flex;
-  align-items: center;
-}
-
-[data-theme="dark"] .subHeading {
-  color: var(--light-gray);
-}
-
-[data-theme="light"] .subHeading {
-  color: var(--dark-gray);
 }
 
 .rotatingContainer {
@@ -32,6 +17,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  font-size: var(--body);
+  font: var(--Raleway);
   color: var(--font-color);
 }
 

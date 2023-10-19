@@ -24,6 +24,18 @@
   /* Using Calc */
   --heading: calc(20px + 0.390625vw);
   --body: calc(16px + 0.390625vw);
+  /* Dark Theme */
+  --dark-font-color: #ffffff;
+  --dark-background: #2b2b2b;
+  --dark-light-background: #252627;
+  --dark-dark-gray: #515152;
+  --dark-light-gray: #c0c0c0;
+  /* Light Theme */
+  --light-font-color: #2b2b2b;
+  --light-background: #f5f5f5;
+  --light-light-background: #e0e0e0;
+  --light-light-gray: #3f3f3f;
+  --light-dark-gray: #aeaeae; 
 }
 
 [data-theme='light'] {

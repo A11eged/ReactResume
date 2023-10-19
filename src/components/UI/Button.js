@@ -7,12 +7,7 @@ const Button = (props) => {
       type={props.type}
       className={styles.Button}
       onClick={props.onClick}
-      style={{
-        height: props.height,
-        width: props.width,
-        fontSize: props.fontSize,
-        color: props.color,
-      }}
+      style={props.style}
     >
       {props.children}
     </button>

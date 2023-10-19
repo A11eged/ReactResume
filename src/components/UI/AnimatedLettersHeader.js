@@ -16,7 +16,7 @@ const AnimatedLettersHeader = (props) => {
             <AnimatedLetters
               {...item}
               key={index}
-              transitionColor={theme === 'dark' ?  ['#08fdd8', '#fff', '#08fdd8'] : ['#0056b3', '#3f3f3f']}
+              transitionColor={theme === 'dark' ?  ['#08fdd8', '#FF5733', '#fff'] : ['#0056b3', '#FF6B85', '#3f3f3f']}
               styles={{ color: theme === 'dark' ? '##08fdd8' : '#0056b3' }}
             />
           );

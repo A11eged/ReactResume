@@ -9,7 +9,6 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import UICard from '../UI/Card';
-
 // Would be cool to make this expand when coming into viewport
 
 const WorkItem = (props) => {
@@ -80,6 +79,8 @@ const WorkItem = (props) => {
             aria-expanded={expanded}
             aria-label="show more"
             style={{
+              color: '#2b2b2b',
+
               margin: '0 auto',
               display: 'flex',
               flexDirection: 'column',
@@ -104,12 +105,13 @@ const WorkItem = (props) => {
               {props.description}
             </p>
             <a className={styles.link} href={props.link}>
-              <Button
+              <Button 
+                style={{
+                  marginTop:".5rem",
+                  height:"auto",
+                  width:"9rem"
+                }}
                 type="button"
-                className={styles.Button}
-                height="auto"
-                width="9rem"
-                color="black"
               >
                 {props.linkText}
               </Button>

@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from '../UI/Button';
 import { Breakpoint } from 'react-socks';
-import Card from './Card';
 import styles from './WorkItem.module.css';
 import { styled } from '@mui/material/styles';
 import CardContent from '@mui/material/CardContent';
@@ -9,8 +8,13 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { ThemeContext } from '../Context/ThemeContext';
+import UICard from '../UI/Card';
+
+// Would be cool to make this expand when coming into viewport
 
 const WorkItem = (props) => {
+  const themeContext = useContext(ThemeContext);
   const [expanded, setExpanded] = useState(false);
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -41,12 +45,12 @@ const WorkItem = (props) => {
   const SvgComponent = props.svg;
 
   return (
-    <Card className={styles.workItem} styles={{ width: props.containerWidth }}>
+    <UICard className={styles.workItem} styles={{ width: props.containerWidth }}>
       <div className={styles.svgContainer}>
         <SvgComponent
           className={styles.svg}
-          // theme provider, dark ? "#3f3f3f" : "#ccc"
-          fill="#3f3f3f"
+          fill='#3f3f3f'
+          // fill={themeContext === 'dark' ? "#f5f5f5" : "#232323"}
           width={props.width}
           height={props.height}
           viewBox={props.viewBox}          
@@ -115,7 +119,7 @@ const WorkItem = (props) => {
           </CardContent>
         </Collapse>
       </Breakpoint>
-    </Card>
+    </UICard>
   );
 };
 

@@ -1,12 +1,11 @@
 import React, {useContext} from 'react';
 import {
-  Breakpoint,
   setDefaultBreakpoints,
   BreakpointProvider,
 } from 'react-socks';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import MobileNavBar from './components/UI/nav/Mobile/MobileNavBar';
+// import MobileNavBar from './components/UI/nav/Mobile/MobileNavBar';
 import Hero from './components/hero/Hero';
 import Work from './components/work/Work';
 import About from './components/About/About';
@@ -17,6 +16,7 @@ import { ThemeProvider, ThemeContext} from './components/Context/ThemeContext';
 
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  console.log(theme);
   setDefaultBreakpoints([
     { xs: 0 },
     { s: 475 },
@@ -29,9 +29,6 @@ function App() {
     <BrowserRouter>
       <BreakpointProvider>
         <div className="hero-container">
-          {/* <Breakpoint s down>
-            <MobileNavBar />
-          </Breakpoint> */}
           <ThemeButton id='theme-toggle-button' onClick={toggleTheme}></ThemeButton>
           <Button id='theme-toggle-button' onClick={toggleTheme}>{theme}</Button>
           <Hero/>

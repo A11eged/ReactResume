@@ -35,7 +35,7 @@ const HeroHeading = () => {
                 <AnimatedLetters
                   {...item}
                   key={index}
-                  transitionColor={theme === 'dark' ?  ['#fff', '#08fdd8'] : ['#2b2b2b', '#08fdd8']}
+                  transitionColor={theme === 'dark' ?  ['#fff', '#08fdd8'] : ['#2b2b2b', '#0056b3']}
                   styles={{ color: theme === 'dark' ? '#fff' : '#2b2b2b' }}
               />
               );
@@ -51,7 +51,7 @@ const HeroHeading = () => {
                 <AnimatedLetters
                   {...item}
                   key={index}
-                  transitionColor={theme === 'dark' ?  ['#fff', '#08fdd8'] : ['#2b2b2b', '#08fdd8']}
+                  transitionColor={theme === 'dark' ?  ['#fff', '#08fdd8'] : ['#2b2b2b', '#0056b3']}
                   styles={{ color: theme === 'dark' ? '#fff' : '#2b2b2b' }}
               />
               );

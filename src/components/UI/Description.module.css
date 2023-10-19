@@ -1,0 +1,8 @@
+.Title {
+  font-size: var(--body);
+  color: var(--font-color);
+  z-index: 2;
+}
+
+
+

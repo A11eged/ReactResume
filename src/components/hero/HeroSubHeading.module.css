@@ -1,5 +1,5 @@
 .subHeading, .rotatingText {
-  font-size: 1.2rem;
+  font-size: var(--body);
   align-items: center;
   font: var(--Raleway);
   margin-top: 0;
@@ -22,7 +22,6 @@
 
 .rotatingContainer {
   display: inline-flex;
-  width: 20vw;
   justify-content: flex-start;
   overflow: hidden;
 }
@@ -33,8 +32,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  color: var(--font-color);
 }
-
 
 /* Animation */
 @keyframes fadeIn {
@@ -51,22 +50,7 @@
   display: inline-block;
   transition: color 0.5s; 
   vertical-align: middle;
+  color: var(--transistion-text-color);
 }
 
-/* Light Mode */
-[data-theme="light"] .container {
-  color: var(--font-color);
-}
 
-[data-theme="light"] .rotatingText {
-  color: var(--red);
-}
-
-/* Dark Mode */
-[data-theme="dark"] .container {
-  color: var(--font-color);
-}
-
-[data-theme="dark"] .rotatingText {
-  color: var(--cyan);
-}

@@ -15,7 +15,7 @@ const RotatingTextComponent = ({words}) => {
         }, 1500); 
 
         return () => clearInterval(interval);
-    }, []);
+    }, [words.length]);
 
     const text = [{type: 'div', text: 'Hi, I develop'}]
 

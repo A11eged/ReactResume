@@ -1,25 +1,11 @@
-[data-theme='dark'] .workItem {
-  background-color: var(--dark-gray);
-  color: var(--font-color);
-}
 
-[data-theme='light'] .workItem {
-  background-color: var(--light-gray);
-  color: var(--font-color);
-}
-
-[data-theme='dark'] .title {
-  color: var(--cyan);
-}
 .workItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.svg {
-
+  /* background-color: var(--background-color); */
+  /* color: var(--font-color) */
 }
 
 .textBox {
@@ -27,21 +13,23 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 .title {
-  font-size: var(--mobileHeading);
-  font-weight: bold;
-  color: var(--light-black);
+  font-size: var(--heading);
   text-align: center;
   margin-bottom: 0.5rem;
+  font: var(--Raleway);
+  color: var(--transistion-text-color);
 }
 .description {
-  font-size: 1rem;
-  color: var(--black);
+  font-size: var(--body);
+  font: var(--Noto);
+  color: var(--font-color);
   margin-bottom: 0.5rem;
 }
+
 .link {
   height: auto;
   width: auto;
@@ -52,14 +40,10 @@
   text-decoration: none;
 }
 
-.svg:hover {
-  cursor: pointer;
-}
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .workItem {
     padding-top: 1rem;
-    /* width: calc(auto+2rem); */
   }
   .textBox {
     width: 100%;
@@ -74,7 +58,6 @@
     margin-bottom: 0.5rem;
   }
   .description {
-    /* font-size: 1.25rem; */
     text-align: center;
     margin-bottom: 0.5rem;
   }
@@ -86,9 +69,6 @@
     text-align: center;
     margin-bottom: 0.5rem;
     text-decoration: none;
-  }
-  .svg:hover {
-    cursor: pointer;
   }
 
   .Button {
@@ -119,17 +99,12 @@
     margin-bottom: 0.5rem;
   }
   .link {
-    /* display: none; */
     font-weight: bold;
     height: 100%;
     width: 100%;
-    /* padding-top: 1rem; */
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 0.5rem;
     text-decoration: none;
   }
-  .svg:hover {
-    cursor: pointer;
-  }
-}
+} */

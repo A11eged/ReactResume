@@ -1,6 +1,6 @@
 .work {
-  /* height: 250vh; */
   display: block;
   position: relative;
   padding: 1rem;
+  /* background-color: var(--background-color); */
 }

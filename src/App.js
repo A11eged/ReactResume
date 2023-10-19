@@ -30,7 +30,6 @@ function App() {
       <BreakpointProvider>
         <div className="hero-container">
           <ThemeButton id='theme-toggle-button' onClick={toggleTheme}></ThemeButton>
-          <Button id='theme-toggle-button' onClick={toggleTheme}>{theme}</Button>
           <Hero/>
           <Work/>
           <About/>

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './HeroAction.module.css';
-import { HashLink } from 'react-router-hash-link';
-import Button from '../UI/Button';
+
 
 const HeroAction = () => {
   return (

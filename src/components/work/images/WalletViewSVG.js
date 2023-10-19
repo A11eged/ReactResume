@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WalletView.module.css';
+
 export const WalletViewSVG = (props) => {
   return (
     <svg

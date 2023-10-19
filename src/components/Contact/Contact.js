@@ -6,7 +6,7 @@ import styles from './Contact.module.css';
 import ContactRefs from './ContactRefs';
 import ContactForm from './ContactForm';
 import { Grid } from '@mui/material';
-import AnimatedLettersHeader from '../UI/AnimatedLettersHeader';
+import AnimatedLettersHeader from '../UX/AnimatedLettersHeader';
 import Description from '../UI/Description';
 
 const Contact = () => {

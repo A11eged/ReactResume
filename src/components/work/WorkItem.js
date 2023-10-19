@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import Button from '../UI/Button';
 import { Breakpoint } from 'react-socks';
 import styles from './WorkItem.module.css';
@@ -8,13 +8,11 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { ThemeContext } from '../Context/ThemeContext';
 import UICard from '../UI/Card';
 
 // Would be cool to make this expand when coming into viewport
 
 const WorkItem = (props) => {
-  const themeContext = useContext(ThemeContext);
   const [expanded, setExpanded] = useState(false);
   const handleExpandClick = () => {
     setExpanded(!expanded);

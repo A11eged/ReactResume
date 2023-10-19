@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import {WalletViewSVG} from './images/WalletViewSVG';
-import { ThemeContext } from '../Context/ThemeContext';
 import WorkItem from './WorkItem';
 import UICard from '../UI/Card';
 
@@ -36,13 +35,6 @@ const WorkItems = [
 ];
 
 const WorkGallery = () => {
-  const theme = useContext(ThemeContext);
-  const [themeState, setThemeState] = useState(theme);
-
-  useEffect(() => {
-    setThemeState(theme);
-  }, [theme]);
-
   const mobileProps = {
     width: '100%',
     height: '100%',

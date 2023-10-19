@@ -4,8 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* background-color: var(--background-color); */
-  /* color: var(--font-color) */
 }
 
 .textBox {
@@ -40,71 +38,3 @@
   text-decoration: none;
 }
 
-
-/* @media screen and (min-width: 768px) {
-  .workItem {
-    padding-top: 1rem;
-  }
-  .textBox {
-    width: 100%;
-    height: auto;
-    margin-left: 0.5rem;
-  }
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .description {
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .link {
-    height: 100%;
-    width: 100%;
-    padding-top: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-  }
-
-  .Button {
-    min-height: 4rem;
-    border-radius: 5px;
-    color: var(--cyan);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .workItem {
-  }
-  .textBox {
-    width: 100%;
-    height: auto;
-    margin-left: 0.5rem;
-  }
-  .title {
-    font-size: 1.75rem;
-    font-weight: bold;
-
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .description {
-    font-size: 1.15rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .link {
-    font-weight: bold;
-    height: 100%;
-    width: 100%;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-  }
-} */

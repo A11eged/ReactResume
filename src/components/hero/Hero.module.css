@@ -13,11 +13,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* grid-template-areas:
-    'heading heading heading'
-    'subheading subheading subheading'
-    '. profile .'
-    'button button .'; */
   justify-items: center;
   justify-content: center;
   align-items: center;

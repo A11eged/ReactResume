@@ -1,23 +1,56 @@
+.subHeading, .rotatingText {
+  font-size: var(--body);
+  align-items: center;
+  font: var(--Raleway);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2rem; 
+}
+
 .subHeading {
-  font-size: 1.2rem;
-  /* margin: 0.5rem; */
+  display: flex;
+  align-items: center;
+}
+
+[data-theme="dark"] .subHeading {
   color: var(--light-gray);
 }
 
-@media screen and (min-width: 768px) {
-  .subHeading {
-    font-size: var(--scalingSubHeading);
+[data-theme="light"] .subHeading {
+  color: var(--dark-gray);
+}
+
+.rotatingContainer {
+  display: inline-flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.container {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--font-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .subHeading {
-    font-size: 2.5rem;
-  }
+.rotatingText {
+  animation: fadeIn 1s forwards;
+  display: inline-block;
+  transition: color 0.5s; 
+  vertical-align: middle;
+  color: var(--transistion-text-color);
 }
 
-@media screen and (min-width: 2000px) {
-  .subHeading {
-    font-size: 2.5rem;
-  }
-}
+

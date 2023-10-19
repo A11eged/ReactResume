@@ -1,15 +1,19 @@
 import React from 'react';
 import styles from './Work.module.css';
 import WorkGallery from './WorkGallery';
-import WorkHeader from './WorkHeader';
-import WorkDescripton from './WorkDescription';
+import AnimatedLettersHeader from '../UI/AnimatedLettersHeader';
+import Description from '../UI/Description';
 
 const Work = () => {
+  const text = [{ type: 'heading1', text: 'My Portfolio' }];
   return (
     <div className={styles.work} id="work">
-      <WorkHeader></WorkHeader>
-      <WorkDescripton></WorkDescripton>
-      <WorkGallery></WorkGallery>
+      <AnimatedLettersHeader text={text}/>
+      <Description text={
+        `This is a small gallery of recent projects that I developed. Stay tuned for more projects as I will
+        consistently be adding more both here and on Github!`
+        }/>
+      <WorkGallery/>
     </div>
   );
 };

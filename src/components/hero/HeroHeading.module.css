@@ -1,24 +1,36 @@
+[data-theme="dark"] .HeroHeading {
+  color: var(--font-color);
+}
+
+[data-theme="light"] .HeroHeading {
+  color: var(--font-color);
+}
+
 .HeroHeading {
-  /* font: var(--Raleway); */
+  font: var(--Raleway);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: 2rem;
-  line-height: 2.7rem;
-  color: var(--white);
+  font-size: calc(3rem + 0.390625vw);
+  line-height: calc(4rem + 0.390625vw);
 }
 
-@media screen and (min-width: 768px) {
+/* For tablets and small desktops */
+@media (min-width: 600px) {
   .HeroHeading {
-    font-size: 3rem;
-    /* font-size: 4rem; */
-    line-height: 4rem;
+    outline: red 1px solid;
+    font-size: calc(3rem + 0.390625vw);
+    line-height: calc(4.5rem + 0.390625vw);
   }
 }
 
-@media screen and (min-width: 2000px) {
+/* For larger desktops */
+@media (min-width: 1024px) {
   .HeroHeading {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    outline: blue 1px solid;
+
+    font-size: calc(3rem + 0.390625vw);
+    line-height: calc(4rem + 0.390625vw);
   }
 }
+

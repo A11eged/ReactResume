@@ -4,10 +4,10 @@ import { HashLink } from 'react-router-hash-link';
 import UpArrow from '../UX/UpArrow';
 import styles from './Contact.module.css';
 import ContactRefs from './ContactRefs';
-import ContactDescription from './ContactDescription';
 import ContactForm from './ContactForm';
-import ContactHeader from './ContactHeader';
 import { Grid } from '@mui/material';
+import AnimatedLettersHeader from '../UI/AnimatedLettersHeader';
+import Description from '../UI/Description';
 
 const Contact = () => {
   const saveFormHandler = (enteredForm) => {
@@ -18,14 +18,18 @@ const Contact = () => {
     console.log(formData);
   };
 
-  // const item =
-
   return (
     <Grid container direction={'row'} columns={2}>
       <Grid item xs={2} s={2} md={1} l={1} xl={1}>
         <div className={styles.contact} id="contact">
-          <ContactHeader></ContactHeader>
-          <ContactDescription></ContactDescription>
+          <AnimatedLettersHeader text={[{type: 'heading1', text: 'Contact Me!'}]}/>
+          <Description
+            text={
+              `I'm interested in web-development opportunities -- both for start
+              ups and established companies. If you have any questions, please don't
+              hesitate to reach out!`
+            }
+          />
           <ContactForm onSaveForm={saveFormHandler} />
           <HashLink to={'#hero'}>
             <Breakpoint s down>
@@ -80,13 +84,11 @@ const Contact = () => {
                 y={'0'}
               />
             </Breakpoint>
-            {/* <UpArrow fill={'#fff'} right={'-1rem'} bottom={'2rem'} />
-        <UpArrow fill={'#fff'} left={'-1rem'} bottom={'2rem'} /> */}
           </HashLink>
         </div>
       </Grid>
       <Grid item xs={2} s={2} md={1} l={1} xl={1}>
-        <ContactRefs></ContactRefs>
+        <ContactRefs/>
       </Grid>
     </Grid>
   );

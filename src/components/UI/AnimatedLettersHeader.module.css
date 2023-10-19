@@ -1,0 +1,9 @@
+.Header {
+
+}
+
+.Title {
+  font-size: var(--heading);
+  z-index: 2;
+  color: var(--transistion-text-color)
+}

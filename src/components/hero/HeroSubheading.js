@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './HeroSubHeading.module.css';
 
-import RotatingTextComponent from '../UX/RotatingText';
 import Typewriter from '../UX/TypeWriter';
 const HeroSubheading = () => {
 

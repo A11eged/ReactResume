@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Work.module.css';
-import WorkGallery from './WorkGallery';
 import AnimatedLettersHeader from '../UX/AnimatedLettersHeader';
 import Description from '../UI/Description';
 import { WorkCanvas } from './WorkCanvas';

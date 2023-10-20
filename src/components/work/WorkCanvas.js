@@ -1,10 +1,7 @@
-import React, {useState} from 'react';
-import Grid from '@mui/material/Grid';
+import React from 'react';
 import {WalletViewSVG} from './images/WalletViewSVG';
-import { NewWorkItem } from './NewWorkItem';
 import styles from './WorkCanvas.module.css';
-import Stack from '@mui/material/Stack';
-import { InteractiveGrid, InteractiveGridItem } from '../UX/InteractiveGrid';
+import { InteractiveGridItem } from '../UX/InteractiveGrid';
 
 
 const WorkItems = [
@@ -41,15 +38,6 @@ const WorkItems = [
 ];
 
 export const WorkCanvas = () => {
-  const [activeItem, setActiveItem] = useState(null);
-
-  const handleClick = (item) => {
-    if (activeItem === item.id) {
-      setActiveItem(null);
-    } else {
-      setActiveItem(item.id);
-    }
-  };
 
   return (
     <div className={styles.canvasContainer}>

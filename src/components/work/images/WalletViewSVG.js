@@ -11,9 +11,6 @@ export const WalletViewSVG = (props) => {
       style={{ borderRadius: '3%' }}
       onClick={props.onClick}
     >
-      <filter>
-        <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
-      </filter>
       <path
         className={styles.svgBackground}
         d="M0 0h97.01v80.74H0z"

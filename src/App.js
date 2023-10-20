@@ -5,7 +5,6 @@ import {
 } from 'react-socks';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-// import MobileNavBar from './components/UI/nav/Mobile/MobileNavBar';
 import Hero from './components/hero/Hero';
 import Work from './components/work/Work';
 import About from './components/About/About';
@@ -14,8 +13,7 @@ import { ThemeButton } from './components/UI/ThemeButton';
 import { ThemeProvider, ThemeContext} from './components/Context/ThemeContext';
 
 function App() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log(theme);
+  const { toggleTheme } = useContext(ThemeContext);
   setDefaultBreakpoints([
     { xs: 0 },
     { s: 475 },

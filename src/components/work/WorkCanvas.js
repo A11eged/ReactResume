@@ -1,7 +1,7 @@
 import React from 'react';
 import {WalletViewSVG} from './images/WalletViewSVG';
-import styles from './WorkCanvas.module.css';
-import { InteractiveGridItem } from '../UX/InteractiveGrid';
+import { InteractiveGridItem } from './InteractiveGrid';
+// import { AdasResponseSVG } from './images/AdasResponseSVG';
 
 
 const WorkItems = [
@@ -19,7 +19,9 @@ const WorkItems = [
     id: 1,
     title: 'Wallet View',
     description:
-      ' The application is built using React and deployed on Amazon Web Services. This website uses a Python backend and Pandas to create Dataframes which, after some functions are called, returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.',
+      ` This was the first webapp I created and I got the idea to create it because at the time, Cryptocurrency was a really popular topic and I was curious if I could use some of the public data to make a useful dashboard. 
+        The application is built using HTML, CSS, JS and is deployed on Amazon Web Services. 
+        This website uses a Python backend and Pandas to create Dataframes which returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.`,
     link: 'http://walletview.us-east-1.elasticbeanstalk.com/#home',
     linkText: 'View Project',
     svg: WalletViewSVG
@@ -27,11 +29,14 @@ const WorkItems = [
   },
   {
     id: 2,
-    title: 'Crypto Options',
+    title: 'Adas Response',
     description:
-      'A web application that allows users to buy and sell cryptocurrency options in a more calculated manner. The application allows user to view projected pricing by utilizing the Black Scholes Algorithm to determine the price of a given contract as variables change',
-    link: 'https://crypto-options.netlify.com/',
+      `
+      This was a full stack application that I developed with my startup team. We were contracted to create a web application that would allow users to upload collision reports and receive a detailed analysis of the collision including which sensors should be fixed.
+      `,
+    link: 'https://adasresponse.com/',
     linkText: 'View Project',
+    // svg: AdasResponseSVG
     svg: WalletViewSVG
 
   },
@@ -40,7 +45,7 @@ const WorkItems = [
 export const WorkCanvas = () => {
 
   return (
-    <div className={styles.canvasContainer}>
+    <div>
       {WorkItems.map((item, index) => {
         return (
           <InteractiveGridItem 

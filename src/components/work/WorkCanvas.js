@@ -1,7 +1,7 @@
 import React from 'react';
 import {WalletViewSVG} from './images/WalletViewSVG';
 import { InteractiveGridItem } from './InteractiveGrid';
-import { AdasResponseSVG } from './images/AdasResponseSVG';
+// import { AdasResponseSVG } from './images/AdasResponseSVG';
 
 
 const WorkItems = [

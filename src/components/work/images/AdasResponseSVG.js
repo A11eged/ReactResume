@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './AdasResponseSVG.module.css';
+// import styles from './AdasResponseSVG.module.css';
 
 export const AdasResponseSVG = (props) => {
   return (

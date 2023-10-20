@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../Context/ThemeContext';
 import { BreakpointProvider, Breakpoint } from 'react-socks';
+
 const UICard = (props) => {
   const themeContext = useContext(ThemeContext);
 
   return (
     <BreakpointProvider>
-
       <Breakpoint s down>
         <div
           style={
@@ -68,8 +68,7 @@ const UICard = (props) => {
         >
           {props.children}
         </div>
-    </Breakpoint>
-
+      </Breakpoint>
     </BreakpointProvider>
   );
 }

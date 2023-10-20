@@ -9,7 +9,11 @@ export const WalletViewSVG = (props) => {
       width={props.width}
       enableBackground="new 0 0 100 100"
       style={{ borderRadius: '3%' }}
+      onClick={props.onClick}
     >
+      <filter>
+        <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+      </filter>
       <path
         className={styles.svgBackground}
         d="M0 0h97.01v80.74H0z"
@@ -119,13 +123,15 @@ export const WalletViewSVG = (props) => {
           style={{
             letterSpacing: '-.05em',
           }}
+          cursor={'pointer'}
         >
           {'W'}
         </tspan>
-        <tspan x={10.76} y={0}>
+        <tspan x={10.76} y={0} cursor={'pointer'}>
           {'all'}
         </tspan>
         <tspan
+          cursor={'pointer'}
           x={22.52}
           y={0}
           style={{
@@ -135,6 +141,7 @@ export const WalletViewSVG = (props) => {
           {'e'}
         </tspan>
         <tspan
+          cursor={'pointer'}
           x={28.81}
           y={0}
           style={{
@@ -143,10 +150,11 @@ export const WalletViewSVG = (props) => {
         >
           {'t'}
         </tspan>
-        <tspan x={32.19} y={0}>
+        <tspan x={32.19} y={0} cursor={'pointer'}>
           {'Vi'}
         </tspan>
         <tspan
+          cursor={'pointer'}
           x={41.88}
           y={0}
           style={{
@@ -156,6 +164,7 @@ export const WalletViewSVG = (props) => {
           {'e'}
         </tspan>
         <tspan
+          cursor={'pointer'}
           x={48.07}
           y={0}
           style={{

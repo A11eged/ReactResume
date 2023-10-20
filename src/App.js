@@ -10,7 +10,6 @@ import Hero from './components/hero/Hero';
 import Work from './components/work/Work';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Button from './components/UI/Button';
 import { ThemeButton } from './components/UI/ThemeButton';
 import { ThemeProvider, ThemeContext} from './components/Context/ThemeContext';
 

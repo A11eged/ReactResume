@@ -46,8 +46,6 @@ const WorkItem = (props) => {
       <div className={styles.svgContainer}>
         <SvgComponent
           className={styles.svg}
-          fill='#3f3f3f'
-          // fill={themeContext === 'dark' ? "#f5f5f5" : "#232323"}
           width={props.width}
           height={props.height}
           viewBox={props.viewBox}          
@@ -80,7 +78,6 @@ const WorkItem = (props) => {
             aria-label="show more"
             style={{
               color: '#2b2b2b',
-
               margin: '0 auto',
               display: 'flex',
               flexDirection: 'column',

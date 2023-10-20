@@ -38,3 +38,6 @@
   text-decoration: none;
 }
 
+.expandedContent {
+  transition: all 0.3s;
+}

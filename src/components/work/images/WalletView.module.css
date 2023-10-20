@@ -1,3 +1,4 @@
 .svgBackground {
   fill: var(--background-color);
+  cursor: pointer;
 }

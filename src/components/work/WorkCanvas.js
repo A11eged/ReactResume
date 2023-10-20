@@ -2,7 +2,7 @@ import React from 'react';
 import {WalletViewSVG} from './images/WalletViewSVG';
 import { InteractiveGridItem } from './InteractiveGrid';
 // import { AdasResponseSVG } from './images/AdasResponseSVG';
-
+import styles from './WorkCanvas.module.css';
 
 const WorkItems = [
   {
@@ -19,9 +19,9 @@ const WorkItems = [
     id: 1,
     title: 'Wallet View',
     description:
-      ` This was the first webapp I created and I got the idea to create it because at the time, Cryptocurrency was a really popular topic and I was curious if I could use some of the public data to make a useful dashboard. 
+      ` When I created this webapp, Cryptocurrency was a really popular topic and I was curious if I could use some of the public data to make a useful dashboard. 
         The application is built using HTML, CSS, JS and is deployed on Amazon Web Services. 
-        This website uses a Python backend and Pandas to create Dataframes which returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.`,
+        The backend uses Pandas and Flask API to create Dataframes which returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.`,
     link: 'http://walletview.us-east-1.elasticbeanstalk.com/#home',
     linkText: 'View Project',
     svg: WalletViewSVG
@@ -45,7 +45,7 @@ const WorkItems = [
 export const WorkCanvas = () => {
 
   return (
-    <div>
+    <div className={styles.canvas}>
       {WorkItems.map((item, index) => {
         return (
           <InteractiveGridItem 

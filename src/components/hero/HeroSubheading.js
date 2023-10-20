@@ -7,7 +7,7 @@ const HeroSubheading = () => {
 
   return (
     <div className={styles.container}>
-      <Typewriter className={styles.subHeading} words={['webapps', 'websites', 'applications', 'data', 'solutions']} initialText="Hi, I develop "/>
+      <Typewriter className={styles.subHeading} words={['webapps', 'websites', 'applications', 'data', 'solutions']} initialText="Hi! I develop "/>
     </div>
 
   );

@@ -18,7 +18,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   font-size: var(--body);
-  font: var(--Raleway);
+  font-family: var(--Raleway);
   color: var(--font-color);
 }
 

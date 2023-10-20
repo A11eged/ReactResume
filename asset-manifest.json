@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MidasPortfolio/static/css/main.b6d52eeb.css",
-    "main.js": "/MidasPortfolio/static/js/main.b450b21a.js",
+    "main.js": "/MidasPortfolio/static/js/main.8926e0dc.js",
     "static/js/787.59717ab6.chunk.js": "/MidasPortfolio/static/js/787.59717ab6.chunk.js",
     "index.html": "/MidasPortfolio/index.html",
     "main.b6d52eeb.css.map": "/MidasPortfolio/static/css/main.b6d52eeb.css.map",
-    "main.b450b21a.js.map": "/MidasPortfolio/static/js/main.b450b21a.js.map",
+    "main.8926e0dc.js.map": "/MidasPortfolio/static/js/main.8926e0dc.js.map",
     "787.59717ab6.chunk.js.map": "/MidasPortfolio/static/js/787.59717ab6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6d52eeb.css",
-    "static/js/main.b450b21a.js"
+    "static/js/main.8926e0dc.js"
   ]
 }

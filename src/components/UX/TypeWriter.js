@@ -34,7 +34,7 @@ const Typewriter = (props) => {
     }, delay);
 
     return () => clearTimeout(timeout);
-  }, [text, subIndex, index, backward]);
+  }, [text, subIndex, index, backward, delay, words, initialText]);
 
   return <>{text}</>;
 };

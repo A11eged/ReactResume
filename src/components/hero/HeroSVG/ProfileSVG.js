@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './ProfileSVG.module.css';
 
 const ProfileSVG = (props) => {

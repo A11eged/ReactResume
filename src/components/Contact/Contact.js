@@ -24,13 +24,15 @@ const Contact = () => {
         <div className={styles.contact} id="contact">
           <AnimatedLettersHeader text={[{type: 'heading1', text: 'Contact Me!'}]}/>
           <Description
+            id={styles.description}
             text={
-              `I'm interested in web-development opportunities -- both for start
-              ups and established companies. If you have any questions, please don't
-              hesitate to reach out!`
-            }
+              `
+              I am currently looking for roles in software and data. 
+              If you have any questions, please don't hesitate to reach out!
+              `}
           />
-          <ContactForm onSaveForm={saveFormHandler} />
+          <ContactForm
+            onSaveForm={saveFormHandler} />
           <HashLink to={'#hero'}>
             <Breakpoint s down>
               <UpArrow

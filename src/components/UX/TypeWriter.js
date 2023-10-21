@@ -15,12 +15,14 @@ const Typewriter = (props) => {
       setBackward(false);
       setIndex((prevIndex) => (prevIndex + 1) % words.length);  // Move to next word
       setSubIndex(0);
-      setDelay(100);
+      setDelay(1000);
     } else if (!backward && subIndex === words[index].length) {
       setBackward(true);
-      setDelay(1000);
+      console.log('backward')
+      console.log(delay)
+      setDelay(3000);
     } else {
-      setDelay(100);
+      setDelay(125);
     }
 
     const timeout = setTimeout(() => {

@@ -10,8 +10,8 @@ const WorkItems = [
     title: 'New Item',
     description:
       'I am always coming up with new things to develop and push out! ',
-    link: 'https://crypto-options.netlify.com/',
-    linkText: 'View Project',
+    link: 'https://github.com/HungryMidas?tab=repositories',
+    linkText: 'View Github',
     svg: WalletViewSVG
 
   },

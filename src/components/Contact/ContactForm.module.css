@@ -32,7 +32,6 @@ ul li {
 }
 .formName {
   grid-area: name;
-  /* background-color: antiquewhite; */
 }
 
 .subject {
@@ -75,21 +74,6 @@ textarea {
   list-style: none;
 }
 
-/* [data-theme='light'] .contactForm input {
-  background: var(--light-dark-gray);
-}
-[data-theme='light'] .contactForm textarea {
-  background: var(--light-dark-gray);
-} */
-/* [data-theme='dark'] .contactForm input {
-  background: var(--dark-background);
-  color: var(--dark-font-color)
-} */
-/* [data-theme='dark'] .contactForm textarea {
-  background: var(--dark-background);
-  color: var(--dark-font-color);
-  border-bottom: #2b2b2b 1px solid;
-} */
 .contactForm input[type='text'],
 .contactForm input[type='email'],
 .contactForm input[type='phone'] {
@@ -102,6 +86,7 @@ textarea {
   box-sizing: border-box;
   font-family: var(--Raleway);
   background: var(--secondary-background-color);
+  color: var(--font-color);
   outline: none;
   z-index: 1;
 }
@@ -112,7 +97,7 @@ textarea {
   padding: 15px 20px;
   outline: none;
   background: var(--secondary-background-color);
-
+  color: var(--font-color);
 }
 
 @keyframes slide-in {
@@ -138,7 +123,7 @@ textarea {
 .formPhone.invalid label,
 .formMessage.invalid label,
 .subject.invalid label {
-  border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid var(--transition-text-color);
   left: -1px;
   bottom: -1px;
   height: 10%;
@@ -165,7 +150,7 @@ textarea {
 .subject.valid input:focus + label {
   transform: translateX(-100%);
   width: 100%;
-  border-bottom: 2px solid var(--cyan);
+  border-bottom: 2px solid var(--transition-text-color);
   left: -1px;
   /* animation: slide-in 0.3s ease; */
 }
@@ -175,18 +160,18 @@ textarea {
 .formPhone label::after,
 .formMessage label::after,
 .subject label::after {
-  /* position: absolute;
+  position: absolute;
   width: 100%;
   height: 1%;
   bottom: -2px;
   left: -1px;
-  transition: all 750ms ease; */
+  transition: all 750ms ease;
 }
 
 .formButton.invalidButton {
-  background-color: var(--red);
+  background-color: var(--error-color);
 }
 
 .formButton.validButton {
-  background-color: var(--cyan);
+  background-color: var(--transition-text-color);
 }

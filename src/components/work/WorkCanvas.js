@@ -19,9 +19,8 @@ const WorkItems = [
     id: 1,
     title: 'Wallet View',
     description:
-      ` When I created this webapp, Cryptocurrency was a really popular topic and I was curious if I could use some of the public data to make a useful dashboard. 
-        The application is built using HTML, CSS, JS and is deployed on Amazon Web Services. 
-        The backend uses Pandas and Flask API to create Dataframes which returns a users Ethereum balance over time, their current wallet value, and a transaction frequency between parties.`,
+      ` This is a full stack web app is built using Python, HTML, CSS, JS and is deployed on Amazon Web Services. 
+        The backend uses Pandas and Flask API to clean, modify and deliver data to the front end.`,
     link: 'http://walletview.us-east-1.elasticbeanstalk.com/#home',
     linkText: 'View Project',
     svg: WalletViewSVG
@@ -32,7 +31,7 @@ const WorkItems = [
     title: 'Adas Response',
     description:
       `
-      This was a full stack application that I developed with my startup team. We were contracted to create a web application that would allow users to upload collision reports and receive a detailed analysis of the collision including which sensors should be fixed.
+      My team was contracted to create a full stack a web application that would allow users to upload collision reports and receive a detailed analysis of the collision including which car sensors should be fixed.
       `,
     link: 'https://adasresponse.com/',
     linkText: 'View Project',

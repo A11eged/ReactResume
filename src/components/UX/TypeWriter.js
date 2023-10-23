@@ -18,8 +18,6 @@ const Typewriter = (props) => {
       setDelay(1000);
     } else if (!backward && subIndex === words[index].length) {
       setBackward(true);
-      console.log('backward')
-      console.log(delay)
       setDelay(3000);
     } else {
       setDelay(125);

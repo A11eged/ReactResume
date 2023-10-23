@@ -24,6 +24,8 @@
   /* Using Calc */
   --heading: calc(20px + 0.390625vw);
   --body: calc(16px + 0.390625vw);
+  /* Global Colors */
+  --error-color: #ED4337;
   /* Dark Theme */
   --dark-font-color: #ffffff;
   --dark-background: #2b2b2b;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ContactRefs.module.css';
 import Github from './icons/github';
-import Instagram from './icons/instagram';
+// import Instagram from './icons/instagram';
 
 import Linkedin from './icons/linkedin';
 
@@ -10,19 +10,19 @@ const ContactRefs = () => {
   const contacts = [
     {
       label: 'Github',
-      link: 'https://github.com/A11eged',
+      link: 'https://github.com/HungryMidas',
       icon: <Github height={50} width={50} />,
     },
     {
       label: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/minh-tran-b617a8163/',
+      link: 'https://www.linkedin.com/in/minh-h-tran/',
       icon: <Linkedin height={50} width={50} />,
-    },
-    {
-      label: 'Instragram',
-      link: 'https://www.instagram.com/_minh_tran_/',
-      icon: <Instagram height={50} width={50} />,
-    },
+    }
+    // {
+    //   label: 'Instragram',
+    //   link: 'https://www.instagram.com/_minh_tran_/',
+    //   icon: <Instagram height={50} width={50} />,
+    // },
   ];
   return (
     <div className={styles.container} id="links">

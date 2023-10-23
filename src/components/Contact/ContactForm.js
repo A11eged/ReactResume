@@ -41,17 +41,17 @@ const ContactForm = () => {
         }
       );
       setButtonText('Sent!');
-    } else {
-      // Diplay an error
-      console.warn('failed')
-    }
+    } 
+    // else {
+    //   // Diplay an error
+    //   console.warn('failed')
+    // }
 
   };
 
   const nameChangeHandler = (event) => {
     if (event.target.value.trim().length > 0) {
       setNameValid(true);
-      console.log('valid')
     }
     setEnteredName(event.target.value);
   };
@@ -59,7 +59,6 @@ const ContactForm = () => {
   const subjectChangeHandler = (event) => {
     if (event.target.value.trim().length > 0) {
       setSubjectValid(true);
-      console.log('valid')
     }
     setEnteredSubject(event.target.value);
   };
@@ -70,7 +69,6 @@ const ContactForm = () => {
       event.target.value.includes('@', '.')
     ) {
       setEmailValid(true);
-      console.log('valid')
     }
     setEnteredEmail(event.target.value);
   };
@@ -78,7 +76,6 @@ const ContactForm = () => {
   const phoneChangeHandler = (event) => {
     if(event.target.value.trim().length > 0) {
       setPhoneValid(true);
-      console.log('valid')
     }
     setEnteredPhone(event.target.value);
   }
@@ -86,7 +83,6 @@ const ContactForm = () => {
   const messageChangeHandler = (event) => {
     if (event.target.value.trim().length > 0) {
       setMessageValid(true);
-      console.log('valid')
     }
     setEnteredMessage(event.target.value);
   };
